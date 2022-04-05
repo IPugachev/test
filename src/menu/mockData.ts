@@ -1,4 +1,4 @@
-import { Category, Menu, Product, ProductFlag } from 'src/interfaces/app';
+import { Category, Menu, Product, ProductFlag } from 'interfaces/app';
 
 const categories = [
   'Бургеры',

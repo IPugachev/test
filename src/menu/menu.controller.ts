@@ -1,5 +1,5 @@
 import { Controller, Get } from '@nestjs/common';
-import { Menu } from 'src/interfaces/app';
+import { Menu } from 'interfaces/app';
 import { MenuService } from './menu.service';
 
 @Controller('menu')
