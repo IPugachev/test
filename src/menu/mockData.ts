@@ -26,11 +26,8 @@ const productNames = [
 ];
 const categoriesImages = ['burger', 'boxmaster', 'stripes'];
 
-export const generatorProductData = (env: string) => {
-  const statiPath =
-    env === 'dev'
-      ? 'http://localhost:4000'
-      : 'https://test-task-rentateam-server.herokuapp.com';
+export const generatorProductData = () => {
+  const staticPath = 'https://rentateam-test-task-server.herokuapp.com';
 
   const menuData: Menu = {
     categories: [],
@@ -53,7 +50,7 @@ export const generatorProductData = (env: string) => {
             : ProductFlag.default,
         price: i === 9 ? 50 : (j + 1) * 10,
         delivery: j % 2 === 1,
-        img: `${statiPath}/static/${categoriesImages[i % 3]}.png`,
+        img: `${staticPath}/static/${categoriesImages[i % 3]}.png`,
       };
       category.products.push(product);
     }
